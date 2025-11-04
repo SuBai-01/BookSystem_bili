@@ -1,0 +1,14 @@
+import mongoose from 'mongoose';
+const bookSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    author: { type: String, required: true },
+    cover: { type: String },
+    category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
+    description: { type: String },
+    stock: { type: Number, default: 0 },
+    publishAt: { type: String, default: null },
+    createdAt: { type: Number, default: Date.now },
+    updatedAt: { type: Number, default: Date.now },
+});
+export default bookSchema;
+//# sourceMappingURL=bookModel%20copy.js.map

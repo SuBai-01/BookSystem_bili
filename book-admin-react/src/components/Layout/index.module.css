@@ -1,0 +1,33 @@
+.header {
+    background: ghostwhite;
+    font-size: 20px;
+    color: #487bd7;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.logo {
+    margin-right: 15px;
+    margin-top: -2px;
+}
+
+.user {
+    /*float: right;*/
+    margin-left: auto; /* 把自己顶到最右边 */
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sectionInner {
+    display: flex;
+    height: calc(100vh - 64px); /* 减去 Header 高度 */
+    /*overflow: hidden; !* 禁止外层滚动 *!*/
+    overflow: auto;
+}
+
+/*右边最大盒子而不是圆角化的盒子*/
+.sectionContent {
+    padding: 32px;
+    height: calc(100vh - 64px);
+}
+

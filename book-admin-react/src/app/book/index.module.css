@@ -1,0 +1,12 @@
+.tablewrap {
+    overflow: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.formcss {
+    display: flex;
+    align-items: center;     /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
